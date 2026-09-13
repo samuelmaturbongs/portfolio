@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samuel | Portfolio</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="assets/icon/icon.png">
+  
+  <!-- Box Icons & Devicon -->
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/editorial.css?v=20260913-3">
+  <link rel="stylesheet" href="assets/css/creative.css?v=5">
+</head>
+<body>
+  <div class="cursor-halo" aria-hidden="true"></div>
+  <div class="reading-progress" aria-hidden="true"></div>
+  <!-- Background Aura Blur Effect for Glassmorphism -->
+  <div class="aurora-blob aurora-blob-1"></div>
+  <div class="aurora-blob aurora-blob-2"></div>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo" aria-label="Samuel — Home">
+        <img src="assets/img/LOGO.gif" alt="MISA Projects" width="180" height="40">
+      </a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link" data-i18n="nav.home">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link" data-i18n="nav.about">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link" data-i18n="nav.skills">Skills</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link" data-i18n="nav.projects">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link" data-i18n="nav.contact">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Close Button Mobile -->
+        <button class="nav__close" id="nav-close" aria-label="Close menu">
+          <i class="bx bx-x"></i>
+        </button>
+      </div>
+
+      <!-- Action Buttons: Language & Theme Switcher -->
+      <div class="nav__actions">
+        <button class="nav__action-btn" id="lang-toggle" title="Switch Language (ID / EN)" aria-label="Switch Language">
+          <i class='bx bx-globe'></i>
+          <span class="lang-text" id="lang-label">EN</span>
+        </button>
+
+        <button class="nav__action-btn" id="theme-toggle" title="Toggle Theme" aria-label="Toggle Theme">
+          <i class='bx bx-sun' id="theme-icon"></i>
+        </button>
+
+        <!-- Toggle Button Mobile -->
+        <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+          <i class="bx bx-menu"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <!-- ==================== HOME ==================== -->
+    <section class="home section" id="home">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="container home__container">
+        
+        <!-- Left Column: Bio & Value Proposition -->
+        <div class="home__content fade-up">
+          <div class="status-badge glass">
+            <span class="status-light"></span> 
+            <span data-i18n="home.status">Online / Available for projects</span>
+          </div>
+          
+          <p class="home__eyebrow">KEVIN SAMUEL / <span data-i18n="home.discipline">ENGINEERING & DESIGN</span></p>
+          <h1 class="home__title" data-i18n="home.headline">Network &<br>Software <em>Engineer.</em></h1>
+
+          <p class="home__desc" data-i18n="home.desc">
+            I’m <strong>Samuel</strong>, working across networks, hardware, software, and design. 
+            I combine technical precision with creativity to deliver reliable digital solutions.
+          </p>
+          <p class="home__philosophy" data-i18n="home.quote">“Inspired by problems. Driven by purpose”</p>
+
+          <div class="home__buttons">
+            <a href="#work" class="button button--primary">
+              <span data-i18n="home.btn_projects">See Projects</span> <i class='bx bx-right-arrow-alt'></i>
+            </a>
+            <a href="#contact" class="home__contact" data-i18n="home.btn_contact">Contact Me</a>
+            <div class="social-mini">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+            </div>
+          </div>
+          <div class="home__expertise" aria-label="Areas of expertise"><span>01 / Networks</span><span>02 / Software</span><span>03 / Systems</span><span>04 / Design</span></div>
+        </div>
+
+        <!-- Right Column: Modern Glassmorphic Portrait Frame -->
+        <div class="home__visual fade-up">
+          <div class="visual__label"><span data-i18n="home.behind">THE PERSON BEHIND THE SYSTEMS</span><span>↘</span></div>
+          <div class="hero-portrait-card">
+            <div class="orbit-sculpture" aria-hidden="true"><span></span><span></span><span></span></div>
+            <div class="portrait-glow"></div>
+            
+            <div class="portrait-frame">
+              <img src="assets/img/me_2.jpeg" alt="Samuel" class="portrait-img">
+            </div>
+
+            <!-- Sleek Modern Badges -->
+            <div class="portrait-badge badge-top glass" title="DevOps & Docker">
+              <i class='bx bx-server' aria-hidden="true"></i>
+              <span>DevOps</span>
+            </div>
+
+            <div class="portrait-badge badge-bottom glass" title="System Uptime">
+              <div class="badge-dot"></div>
+              <div class="badge-text">
+                <span data-i18n="home.uptime">Uptime</span>
+                <strong>99.9%</strong>
+              </div>
+            </div>
+          </div>
+          <div class="visual__caption"><span>Kevin Samuel</span><span>3+ <span data-i18n="about.exp">Years Exp</span> · BNSP</span></div>
+        </div>
+
+      </div>
+      <a class="scroll-cue" href="#work"><span data-i18n="creative.scroll">SCROLL TO EXPLORE</span><span>↓</span></a>
+    </section>
+
+    <!-- ==================== RUNNING TECH STACK ==================== -->
+    <div class="tech-marquee-section">
+      <div class="stack-label container"><span data-i18n="home.toolbox">THE TOOLS BEHIND THE WORK</span><button id="motion-toggle" type="button" aria-pressed="false" data-i18n="motion.pause">Pause motion</button></div>
+      <div class="tech-marquee">
+        <div class="marquee-track">
+          <!-- Set 1 -->
+          <div class="tech-item tech-laravel"><i class="devicon-laravel-plain colored"></i> Laravel</div>
+          <div class="tech-item tech-k8s"><i class="devicon-kubernetes-plain colored"></i> Kubernetes</div>
+          <div class="tech-item tech-postgres"><i class="devicon-postgresql-plain colored"></i> PostgreSQL</div>
+          <div class="tech-item tech-redis"><i class="devicon-redis-plain colored"></i> Redis</div>
+          <div class="tech-item tech-docker"><i class="devicon-docker-plain colored"></i> Docker</div>
+          <div class="tech-item tech-mongodb"><i class="devicon-mongodb-plain colored"></i> MongoDB</div>
+          <div class="tech-item tech-go"><i class="devicon-go-original-wordmark colored"></i> Go</div>
+          <div class="tech-item tech-python"><i class="devicon-python-plain colored"></i> Python</div>
+          <div class="tech-item tech-nestjs"><i class="devicon-nestjs-plain colored"></i> NestJS</div>
+          <div class="tech-item tech-bun"><i class="devicon-bun-plain colored"></i> Bun</div>
+          <div class="tech-item tech-rabbitmq"><i class="devicon-rabbitmq-original colored"></i> RabbitMQ</div>
+          <div class="tech-item tech-graphql"><i class="devicon-graphql-plain colored"></i> GraphQL</div>
+          <div class="tech-item tech-grafana"><i class="devicon-grafana-plain colored"></i> Grafana</div>
+          <div class="tech-item tech-prometheus"><i class="devicon-prometheus-original colored"></i> Prometheus</div>
+          <div class="tech-item tech-nginx"><i class="devicon-nginx-original colored"></i> Nginx</div>
+          <div class="tech-item tech-linux"><i class="devicon-linux-plain colored"></i> Linux</div>
+          <div class="tech-item tech-ubuntu"><i class="devicon-ubuntu-plain colored"></i> Ubuntu</div>
+          <div class="tech-item tech-bash"><i class="devicon-bash-plain colored"></i> Bash</div>
+          <div class="tech-item tech-php"><i class="devicon-php-plain colored"></i> PHP</div>
+          <div class="tech-item tech-nodejs"><i class="devicon-nodejs-plain colored"></i> Node.js</div>
+          <div class="tech-item tech-vue"><i class="devicon-vuejs-plain colored"></i> Vue.js</div>
+          <div class="tech-item tech-mysql"><i class="devicon-mysql-plain colored"></i> MySQL</div>
+          <div class="tech-item tech-git"><i class="devicon-git-plain colored"></i> Git</div>
+          <div class="tech-item tech-figma"><i class="devicon-figma-plain colored"></i> Figma</div>
+          <div class="tech-item tech-tailwind"><i class="devicon-tailwindcss-plain colored"></i> Tailwind</div>
+
+          <!-- Set 2 (Duplicate for Seamless Infinite Marquee Loop) -->
+          <div class="tech-item tech-laravel"><i class="devicon-laravel-plain colored"></i> Laravel</div>
+          <div class="tech-item tech-k8s"><i class="devicon-kubernetes-plain colored"></i> Kubernetes</div>
+          <div class="tech-item tech-postgres"><i class="devicon-postgresql-plain colored"></i> PostgreSQL</div>
+          <div class="tech-item tech-redis"><i class="devicon-redis-plain colored"></i> Redis</div>
+          <div class="tech-item tech-docker"><i class="devicon-docker-plain colored"></i> Docker</div>
+          <div class="tech-item tech-mongodb"><i class="devicon-mongodb-plain colored"></i> MongoDB</div>
+          <div class="tech-item tech-go"><i class="devicon-go-original-wordmark colored"></i> Go</div>
+          <div class="tech-item tech-python"><i class="devicon-python-plain colored"></i> Python</div>
+          <div class="tech-item tech-nestjs"><i class="devicon-nestjs-plain colored"></i> NestJS</div>
+          <div class="tech-item tech-bun"><i class="devicon-bun-plain colored"></i> Bun</div>
+          <div class="tech-item tech-rabbitmq"><i class="devicon-rabbitmq-original colored"></i> RabbitMQ</div>
+          <div class="tech-item tech-graphql"><i class="devicon-graphql-plain colored"></i> GraphQL</div>
+          <div class="tech-item tech-grafana"><i class="devicon-grafana-plain colored"></i> Grafana</div>
+          <div class="tech-item tech-prometheus"><i class="devicon-prometheus-original colored"></i> Prometheus</div>
+          <div class="tech-item tech-nginx"><i class="devicon-nginx-original colored"></i> Nginx</div>
+          <div class="tech-item tech-linux"><i class="devicon-linux-plain colored"></i> Linux</div>
+          <div class="tech-item tech-ubuntu"><i class="devicon-ubuntu-plain colored"></i> Ubuntu</div>
+          <div class="tech-item tech-bash"><i class="devicon-bash-plain colored"></i> Bash</div>
+          <div class="tech-item tech-php"><i class="devicon-php-plain colored"></i> PHP</div>
+          <div class="tech-item tech-nodejs"><i class="devicon-nodejs-plain colored"></i> Node.js</div>
+          <div class="tech-item tech-vue"><i class="devicon-vuejs-plain colored"></i> Vue.js</div>
+          <div class="tech-item tech-mysql"><i class="devicon-mysql-plain colored"></i> MySQL</div>
+          <div class="tech-item tech-git"><i class="devicon-git-plain colored"></i> Git</div>
+          <div class="tech-item tech-figma"><i class="devicon-figma-plain colored"></i> Figma</div>
+          <div class="tech-item tech-tailwind"><i class="devicon-tailwindcss-plain colored"></i> Tailwind</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== MAIN PROJECT ==================== -->
+    <section class="project section" id="project">
+      <h2 class="section__title" data-i18n="side_project.title">Side Project</h2>
+      <span class="section__subtitle" data-i18n="side_project.subtitle">For Featured Work</span>
+
+      <div class="project__container container">
+        <div class="project__card glass-panel">
+          <div class="project__media">
+            <img src="assets/img/server.webp" alt="Server" class="project__img">
+          </div>
+          <div class="project__media">
+            <video autoplay loop muted playsinline class="project__video">
+              <source src="assets/video/full.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="project__info">
+            <h3 class="project__title highlight" data-i18n="side_project.card_title">Home Server</h3>
+            <p class="project__description" data-i18n="side_project.card_desc">
+              The website you are accessing now is handled by a simple Home Server that I designed. 
+              A simple Home server is made using an old laptop by installing Ubuntu Server. 
+              This laptop can be used to store files, run web applications, or as a media server for streaming.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FEATURED PROJECTS ==================== -->
+    <section class="work section" id="work">
+      <div class="container">
+        <div class="section__header fade-up">
+          <h2 class="section__title"><span data-i18n="work.title_prefix">Featured</span> <span class="gradient-text" data-i18n="work.title_highlight">Projects</span></h2>
+          <span class="section__subtitle" data-i18n="work.subtitle">Recent Works & Case Studies</span>
+        </div>
+
+        <div class="projects__grid">
+          <!-- Project Card 1: SIM Data Layanan Kesehatan -->
+          <div class="project-item glass-panel fade-up">
+            <div class="project-item__preview">
+              <div class="project-item__img-box">
+                <img src="assets/img/placeholder-app.svg" alt="Placeholder web application" class="project-item__img" loading="lazy" width="800" height="500">
+                <div class="project-item__badge" data-i18n="work.card1_badge">Web Application</div>
+              </div>
+            </div>
+            <div class="project-item__body">
+              <div class="project-item__tags">
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Livewire</span>
+                <span class="tech-tag">Tailwind</span>
+              </div>
+              <h3 class="project-item__title" data-i18n="work.card1_title">Sistem Informasi Manajemen Data Terpusat</h3>
+              <p class="project-item__desc" data-i18n="work.card1_desc">
+                Sistem terpusat untuk memproses, menyimpan, dan menyajikan data rekam medis dan administrasi layanan kesehatan secara aman, terstruktur, dan real-time.
+              </p>
+              <div class="project-item__footer">
+                <a href="project-2.html" class="button button--small">
+                  <span data-i18n="work.btn_details">Detail Proyek</span> <i class='bx bx-right-arrow-alt'></i>
+                </a>
+                <span class="project-source-status">
+                  <i class='bx bxl-github' aria-hidden="true"></i>
+                  <span data-i18n="work.source_soon">Source code coming soon</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 2: Grafana & Prometheus Monitoring -->
+          <div class="project-item glass-panel fade-up" style="transition-delay: 0.1s;">
+            <div class="project-item__preview">
+              <div class="project-item__img-box">
+                <img src="assets/img/placeholder-monitoring.svg" alt="Placeholder monitoring dashboard" class="project-item__img" loading="lazy" width="800" height="500">
+                <div class="project-item__badge" data-i18n="work.card2_badge">DevOps & Network</div>
+              </div>
+            </div>
+            <div class="project-item__body">
+              <div class="project-item__tags">
+                <span class="tech-tag">Prometheus</span>
+                <span class="tech-tag">Grafana</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Ubuntu</span>
+              </div>
+              <h3 class="project-item__title" data-i18n="work.card2_title">Monitoring & Alerting Infrastructure</h3>
+              <p class="project-item__desc" data-i18n="work.card2_desc">
+                Implementasi stack visualisasi metrik server dan jaringan secara real-time dengan dashboard dinamis serta notifikasi otomatis saat terjadi anomali beban sistem.
+              </p>
+              <div class="project-item__footer">
+                <a href="project-3.html" class="button button--small">
+                  <span data-i18n="work.btn_details">Detail Proyek</span> <i class='bx bx-right-arrow-alt'></i>
+                </a>
+                <span class="project-source-status">
+                  <i class='bx bxl-github' aria-hidden="true"></i>
+                  <span data-i18n="work.source_soon">Source code coming soon</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 3: Home Server & Virtual Lab -->
+          <div class="project-item glass-panel fade-up" style="transition-delay: 0.2s;">
+            <div class="project-item__preview">
+              <div class="project-item__img-box">
+                <img src="assets/img/placeholder-server.svg" alt="Placeholder home server" class="project-item__img" loading="lazy" width="800" height="500">
+                <div class="project-item__badge" data-i18n="work.card3_badge">Server & Cloud</div>
+              </div>
+            </div>
+            <div class="project-item__body">
+              <div class="project-item__tags">
+                <span class="tech-tag">Proxmox VE</span>
+                <span class="tech-tag">Ubuntu Server</span>
+                <span class="tech-tag">WireGuard</span>
+                <span class="tech-tag">Nginx</span>
+              </div>
+              <h3 class="project-item__title" data-i18n="work.card3_title">Custom Home Server & Self-Hosted Lab</h3>
+              <p class="project-item__desc" data-i18n="work.card3_desc">
+                Pembangunan infrastruktur private cloud mandiri hemat energi untuk backup otomatis, web hosting lokal, dan media streaming internal.
+              </p>
+              <div class="project-item__footer">
+                <a href="project-1.html" class="button button--small">
+                  <span data-i18n="work.btn_details">Detail Proyek</span> <i class='bx bx-right-arrow-alt'></i>
+                </a>
+                <span class="project-source-status">
+                  <i class='bx bxl-github' aria-hidden="true"></i>
+                  <span data-i18n="work.source_soon">Source code coming soon</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section__header fade-up">
+          <h2 class="section__title"><span class="gradient-text" data-i18n="about.title_gradient">About</span> <span data-i18n="about.title_rest">Me</span></h2>
+          <span class="section__subtitle" data-i18n="about.subtitle">Professional & Personal Life</span>
+        </div>
+
+        <div class="about-bento-grid">
+          
+          <div class="bento-card photo-zone glass-panel fade-up">
+            <div class="bento-bg-icon"><i class='bx bx-camera'></i></div>
+            
+            <div class="carousel-wrapper">
+              <div class="c-slide active">
+                <img src="assets/img/me_2.jpeg" alt="Professional" class="c-img">
+                <div class="c-caption">
+                  <span class="c-tag" data-i18n="about.tag_tech">💻 Tech Enthusiast</span>
+                  <h3>Kevin Samuel</h3>
+                </div>
+              </div>
+              <div class="c-slide">
+                <img src="assets/img/run_cut.webp" alt="Runner" class="c-img">
+                <div class="c-caption">
+                  <span class="c-tag" data-i18n="about.tag_runner">🏃‍♂️ Active Lifestyle</span>
+                  <h3 data-i18n="about.tag_beyond">Beyond Code</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="c-dots">
+              <span class="c-dot active" data-slide="0"></span>
+              <span class="c-dot" data-slide="1"></span>
+            </div>
+          </div>
+
+          <div class="bento-card bio-zone glass-panel fade-up" style="transition-delay: 0.1s;">
+            <div class="bento-bg-icon"><i class='bx bx-user'></i></div>
+            <div class="card-content">
+              <div class="icon-box"><i class='bx bx-user-voice'></i></div>
+              <h3 data-i18n="about.story_title">Story & Philosophy</h3>
+              <p data-i18n="about.story_desc">
+                I’m Kevin Samuel. I believe balance is essential.
+                On one hand, I’m deeply passionate about <span class="highlight">Servers & Code</span>.
+                On the other hand, I maintain my routine and well-being through my hobby in sports.
+                <br><br>
+                “Stay hungry, stay foolish.” — Steve Jobs
+              </p>
+            </div>
+          </div>
+
+          <div class="bento-card stat-zone glass-panel fade-up" style="transition-delay: 0.2s;">
+            <div class="stat-content">
+              <h3>3+</h3>
+              <span data-i18n="about.exp">Years Exp</span>
+            </div>
+          </div>
+
+          <div class="bento-card stat-zone glass-panel fade-up" style="transition-delay: 0.25s;">
+            <div class="stat-content">
+              <h3>BNSP</h3>
+              <span data-i18n="about.certified">Certified</span>
+            </div>
+          </div>
+
+          <div class="bento-card music-zone glass-panel fade-up" style="transition-delay: 0.3s;">
+            <div class="bento-bg-icon"><i class='bx bxl-spotify'></i></div>
+            <div class="music-inner">
+              <div class="music-label">
+                <i class='bx bxl-spotify'></i> <span data-i18n="about.spotify">On Repeat</span>
+              </div>
+              <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4AE7Lj39VnSZNOmGH2iZaq?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- ==================== ACCORDION ==================== -->
+    <!-- <section class="qualification section">
+      <h2 class="section__title">Qualifications</h2>
+      <span class="section__subtitle">Certifications & Languages</span> -->
+
+      <!-- <div class="accordion__container container"> -->
+        <!-- Certifications -->
+        <!-- <div class="accordion__item glass">
+          <button class="accordion__header" data-accordion="certificates">
+            <span><i class="bx bx-medal"></i> Certifications</span>
+            <i class="bx bx-chevron-down accordion__icon"></i>
+          </button>
+          <div class="accordion__content" id="certificates">
+            <div class="accordion__grid">
+              <div class="accordion__card">
+                <h4>Network, Junior Technical Support</h4>
+                <p>BNSP Certificate No: 62019213900020932021</p>
+                <span class="accordion__year">2021</span>
+              </div>
+              <div class="accordion__card">
+                <h4>Computer Network Engineering</h4>
+                <p>LSP TIK Triatma: Infrastructure, Server Admin, WAN</p>
+                <span class="accordion__year">2021</span>
+              </div>
+              <div class="accordion__card">
+                <h4>Network Administrator</h4>
+                <p>BNSP Certificate No: 611002522249542023</p>
+                <span class="accordion__year">2023</span>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Languages -->
+        <!-- <div class="accordion__item glass">
+          <button class="accordion__header" data-accordion="languages">
+            <span><i class="bx bx-globe"></i> Languages</span>
+            <i class="bx bx-chevron-down accordion__icon"></i>
+          </button>
+          <div class="accordion__content" id="languages">
+            <div class="language__list">
+              <div class="language__item">
+                <div class="language__info">
+                  <span>Bahasa Indonesia</span>
+                  <span class="language__level">Native</span>
+                </div>
+                <div class="language__bar">
+                  <div class="language__progress" style="width: 100%"></div>
+                </div>
+              </div>
+              <div class="language__item">
+                <div class="language__info">
+                  <span>English</span>
+                  <span class="language__level">Intermediate</span>
+                </div>
+                <div class="language__bar">
+                  <div class="language__progress" style="width: 60%"></div>
+                </div>
+              </div>
+              <div class="language__item">
+                <div class="language__info">
+                  <span>Spanish</span>
+                  <span class="language__level">Learning</span>
+                </div>
+                <div class="language__bar">
+                  <div class="language__progress" style="width: 20%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- ==================== BOOK / READING ==================== -->
+    <section class="book section" id="book">
+      <h2 class="section__title" data-i18n="book.section_title">Currently Reading</h2>
+      <span class="section__subtitle" data-i18n="book.section_subtitle">Insight & Inspiration</span>
+
+      <div class="book__container container">
+        <div class="book__content glass-panel">
+          
+          <div class="book__visual">
+            <div class="book__cover-wrapper">
+              <img src="assets/img/book.jpeg" alt="Genius Makers Book Cover" class="book__img">
+            </div>
+          </div>
+
+          <div class="book__info">
+            <div class="book__header">
+              <span class="book__tag" data-i18n="book.tag">Recommended Read</span>
+              <h3 class="book__title">Genius Makers</h3>
+              <span class="book__author">by Cade Metz</span>
+            </div>
+            
+            <p class="book__description" data-i18n="book.desc">
+              The <span class="highlight">Mavericks</span> who brought AI to Google, Facebook, and the World.
+              <br><br>
+              This book captures the rise of modern AI through vivid, human-centered storytelling. 
+              It reveals the rivalry among tech giants like Google and OpenAI as they raced to secure talent. 
+              What stood out to me is how Metz weaves in the ethical implications—bias and privacy—without sounding preachy. 
+              It’s a reminder that AI progress isn’t just about algorithms, but the ambition and dilemmas of the people behind them.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS ==================== -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section__header fade-up">
+          <h2 class="section__title"><span data-i18n="skills.title_prefix">Technical</span> <span class="gradient-text" data-i18n="skills.title_highlight">Expertise</span></h2>
+          <span class="section__subtitle" data-i18n="skills.subtitle">My Capabilities & Tools</span>
+        </div>
+
+        <div class="skill-bento">
+          
+          <div class="bento-item area-soft glass-panel fade-up">
+            <div class="bento-bg-icon"><i class='bx bx-code-alt'></i></div>
+            <div class="bento-content">
+              <div class="icon-box"><i class='bx bx-code-alt'></i></div>
+              <h3 data-i18n="skills.soft_title">Software<br>Development</h3>
+              <p data-i18n="skills.soft_desc">Fullstack Web Apps, Database Architecture, API Integration.</p>
+            </div>
+          </div>
+
+          <div class="bento-item area-net glass-panel fade-up" style="transition-delay: 0.1s;">
+            <div class="bento-bg-icon"><i class='bx bx-network-chart'></i></div>
+            <div class="bento-content">
+              <div class="icon-box"><i class='bx bx-network-chart'></i></div>
+              <h3 data-i18n="skills.net_title">Network<br>Engineer</h3>
+              <p data-i18n="skills.net_desc">Routing, Switching, Mikrotik, VPN, Enterprise Security.</p>
+            </div>
+          </div>
+
+          <div class="bento-item area-hard glass-panel fade-up" style="transition-delay: 0.2s;">
+            <div class="bento-bg-icon"><i class='bx bx-server'></i></div>
+            <div class="bento-content">
+              <div class="icon-box"><i class='bx bx-server'></i></div>
+              <h3 data-i18n="skills.hard_title">Hardware & Server</h3>
+              <p data-i18n="skills.hard_desc">Proxmox, Ubuntu Server, Maintenance, IoT Setup.</p>
+            </div>
+          </div>
+
+          <div class="bento-item area-des glass-panel fade-up" style="transition-delay: 0.3s;">
+            <div class="bento-bg-icon"><i class='bx bx-palette'></i></div>
+            <div class="bento-content">
+              <div class="icon-box"><i class='bx bx-palette'></i></div>
+              <h3 data-i18n="skills.des_title">UI/UX Design</h3>
+              <p data-i18n="skills.des_desc">Wireframing, High-Fidelity Prototyping & Modern Glass UI.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="contact section" id="contact">
+      <h2 class="section__title" data-i18n="contact.title">Contact Me</h2>
+      <span class="section__subtitle" data-i18n="contact.subtitle">Get in Touch</span>
+
+      <div class="contact__container container">
+        <form action="https://formspree.io/f/xovyvwlw" method="POST" class="contact__form glass-panel" id="contact-form">
+          <div class="contact__group">
+            <label for="contact-email" data-i18n="contact.email_placeholder">Your Email</label>
+            <input id="contact-email" type="email" name="email" autocomplete="email" placeholder="Your Email" data-i18n-attr="placeholder:contact.email_placeholder" class="contact__input" required>
+          </div>
+          <div class="contact__group">
+            <label for="contact-message" data-i18n="contact.msg_placeholder">Your Message</label>
+            <textarea id="contact-message" name="message" rows="8" placeholder="Your Message" data-i18n-attr="placeholder:contact.msg_placeholder" class="contact__input" required></textarea>
+          </div>
+          <button type="submit" class="button button--primary">
+            <span data-i18n="contact.btn_send">Send Message</span>
+            <i class="bx bx-send"></i>
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="footer__container container">
+      <h2 class="footer__title">Samuel</h2>
+      <div class="footer__social">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+      </div>
+      <p class="footer__copy" data-i18n="footer.copy">&copy; 2025 Samuel. All rights reserved. V.1.0</p>
+    </div>
+  </footer>
+
+  <!-- Scroll Up -->
+  <a href="#" class="scrollup" id="scroll-up" aria-label="Scroll to top">
+    <i class="bx bx-up-arrow-alt"></i>
+  </a>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js?v=20260913-4"></script>
+  <script src="assets/js/creative.js?v=2"></script>
+</body>
+</html>

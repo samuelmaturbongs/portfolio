@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistem Informasi Manajemen Data Terpusat</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <style>
+    body {
+      background-color: #0b0c10;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      color: #e5e5e5;
+    }
+
+    .project-card {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      padding: 1.8rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      max-width: 1000px;
+      margin: 60px auto;
+    }
+
+    .project-card__media {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    }
+
+    .project-card__media img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.35s ease, filter 0.35s ease;
+      filter: brightness(0.95);
+    }
+
+    .project-card__media img:hover {
+      transform: scale(1.03);
+      filter: brightness(1);
+    }
+
+    .project-card__title {
+      font-size: 1.8rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-card__subtitle {
+      color: #bfcad0;
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .project-card__meta {
+      color: #b9c1c6;
+      font-size: 0.95rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .project-card__h {
+      color: #66fcf1;
+      font-size: 1.1rem;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-card__list {
+      color: #cbd6db;
+      margin: 0 0 1rem 1.25rem;
+      line-height: 1.6;
+    }
+
+    .project-card__tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .project-card__tags span {
+      background: rgba(255,255,255,0.08);
+      color: #e9f1f5;
+      padding: 0.35rem 0.7rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    .project-card__result {
+      color: #bfcad0;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-top: 0.5rem;
+    }
+
+    .project-card__actions {
+      display: flex;
+      gap: 0.8rem;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.6rem 1.1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      background: rgba(255,255,255,0.05);
+      color: #e6f0f4;
+      border: 1px solid rgba(255,255,255,0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    }
+
+    .btn--primary {
+      background: linear-gradient(90deg, #3ab0a3, #0a7fb1);
+      color: white;
+      border: none;
+    }
+
+    @media (min-width: 920px) {
+      .project-card {
+        grid-template-columns: 420px 1fr;
+        gap: 1.8rem;
+        padding: 2rem;
+      }
+      .project-card__media img {
+        height: 100%;
+        min-height: 320px;
+        max-height: 480px;
+      }
+    }
+
+    :root {
+      color-scheme: dark;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="project-card" id="project-simdt">
+    <div class="project-card__media">
+      <img src="assets/project_img/dashboard.png" alt="Sistem Informasi Manajemen Data Terpusat">
+    </div>
+
+    <div class="project-card__content">
+      <h2 class="project-card__title">Sistem Informasi Manajemen Data Terpusat</h2>
+      <p class="project-card__subtitle">
+        Sistem terpusat untuk manajemen layanan puskesmas yang mengintegrasikan rekam medis, kunjungan, apotek, dan laporan manajerial lintas unit pelayanan.
+      </p>
+
+      <!-- <div class="project-card__meta">
+        <strong>Peran:</strong> <span>Full Stack Developer & System Integrator</span><br>
+        <strong>Tahun:</strong> <span>2024 – 2025</span>
+      </div> -->
+
+      <h3 class="project-card__h">Fitur Utama</h3>
+      <ul class="project-card__list">
+        <li>Manajemen pasien & kunjungan poliklinik</li>
+        <li>Multi-role authentication (Admin, Dokter, Perawat, Kasir, Apotek, Lab)</li>
+        <li>Resep & pengurangan stok otomatis saat penyimpanan</li>
+        <li>Integrasi antar-puskesmas untuk berbagi riwayat pasien</li>
+        <li>Dashboard Super Admin untuk monitoring global multi-puskesmas</li>
+      </ul>
+
+      <h3 class="project-card__h">Teknologi yang Digunakan</h3>
+      <div class="project-card__tags">
+        <span>Laravel 11</span>
+        <span>Filament 3.2</span>
+        <span>MySQL</span>
+        <span>Docker</span>
+        <span>Grafana</span>
+      </div>
+
+      <p class="project-card__result">
+        <strong>Hasil:</strong> Sistem terbukti meningkatkan efisiensi administrasi hingga 39%, memudahkan akses riwayat pasien antar-puskesmas, dan menyederhanakan proses pembayaran serta pengelolaan stok obat di lingkungan layanan kesehatan.
+      </p>
+
+      <div class="project-card__actions">
+        <!-- <a href="project-simdt-detail.html" class="btn btn--primary" title="Detail Project">Lihat Detail</a>
+        <a href="https://github.com/username/simdt-repo" class="btn" target="_blank" rel="noopener">Kode / Repo</a> -->
+        <a href="index.html#work" class="btn">&larr; Kembali</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

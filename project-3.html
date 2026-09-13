@@ -1,0 +1,411 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grafana & Prometheus Monitoring System</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <style>
+    body {
+      background-color: #0b0c10;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      color: #e5e5e5;
+    }
+
+    .project-card {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      padding: 1.8rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      max-width: 1000px;
+      margin: 60px auto;
+    }
+
+    .project-card__media {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    }
+
+    .project-card__media img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.35s ease, filter 0.35s ease;
+      filter: brightness(0.95);
+    }
+
+    .project-card__media img:hover {
+      transform: scale(1.03);
+      filter: brightness(1);
+    }
+
+    .project-card__title {
+      font-size: 1.8rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-card__subtitle {
+      color: #bfcad0;
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .project-card__meta {
+      color: #b9c1c6;
+      font-size: 0.95rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .project-card__h {
+      color: #66fcf1;
+      font-size: 1.1rem;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-card__list {
+      color: #cbd6db;
+      margin: 0 0 1rem 1.25rem;
+      line-height: 1.6;
+    }
+
+    .project-card__tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .project-card__tags span {
+      background: rgba(255,255,255,0.08);
+      color: #e9f1f5;
+      padding: 0.35rem 0.7rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    .project-card__result {
+      color: #bfcad0;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-top: 0.5rem;
+    }
+
+    .project-card__actions {
+      display: flex;
+      gap: 0.8rem;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.6rem 1.1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      background: rgba(255,255,255,0.05);
+      color: #e6f0f4;
+      border: 1px solid rgba(255,255,255,0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    }
+
+    .btn--primary {
+      background: linear-gradient(90deg, #3ab0a3, #0a7fb1);
+      color: white;
+      border: none;
+    }
+
+    @media (min-width: 920px) {
+      .project-card {
+        grid-template-columns: 420px 1fr;
+        gap: 1.8rem;
+        padding: 2rem;
+      }
+      .project-card__media img {
+        height: 100%;
+        min-height: 320px;
+        max-height: 480px;
+      }
+    }
+
+    :root {
+      color-scheme: dark;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="project-card" id="project-grafana">
+    <div class="project-card__media">
+      <img src="assets/project_img/grafana.png" alt="Grafana & Prometheus Monitoring System">
+    </div>
+
+    <div class="project-card__content">
+      <h2 class="project-card__title">Grafana & Prometheus Monitoring System</h2>
+      <p class="project-card__subtitle">
+        Sistem monitoring berbasis Grafana dan Prometheus untuk memantau performa server, container, dan aplikasi Laravel secara real-time dengan visualisasi interaktif.
+      </p>
+
+      <!-- <div class="project-card__meta">
+        <strong>Peran:</strong> <span>DevOps Engineer & System Monitoring Developer</span><br>
+        <strong>Tahun:</strong> <span>2025</span>
+      </div> -->
+
+      <h3 class="project-card__h">Fitur Utama</h3>
+      <ul class="project-card__list">
+        <li>Integrasi Prometheus untuk pengumpulan metrik real-time</li>
+        <li>Dashboard Grafana dengan panel visual interaktif</li>
+        <li>Monitoring Docker container menggunakan cAdvisor</li>
+        <li>Integrasi MySQL Exporter, PHP-FPM Exporter, dan Node Exporter</li>
+        <li>Notifikasi otomatis via Telegram jika terjadi overload</li>
+        <li>Pemantauan performa aplikasi Laravel dan database</li>
+      </ul>
+
+      <h3 class="project-card__h">Teknologi yang Digunakan</h3>
+      <div class="project-card__tags">
+        <span>Grafana</span>
+        <span>Prometheus</span>
+        <span>Docker</span>
+        <span>cAdvisor</span>
+        <span>MySQL Exporter</span>
+        <span>PHP-FPM Exporter</span>
+        <span>Telegram Bot</span>
+      </div>
+
+      <p class="project-card__result">
+        <strong>Hasil:</strong> Sistem monitoring ini membantu mengidentifikasi bottleneck performa lebih cepat, memastikan ketersediaan server tetap stabil, dan mengurangi downtime hingga 40% melalui deteksi dini dan alert otomatis.
+      </p>
+
+      <div class="project-card__actions">
+        <!-- <a href="project-grafana-detail.html" class="btn btn--primary" title="Detail Project">Lihat Detail</a>
+        <a href="https://github.com/username/grafana-monitoring" class="btn" target="_blank" rel="noopener">Kode / Repo</a> -->
+        <a href="index.html#work" class="btn">&larr; Kembali</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grafana & Prometheus Monitoring System</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <style>
+    body {
+      background-color: #0b0c10;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      color: #e5e5e5;
+    }
+
+    .project-card {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      padding: 1.8rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      max-width: 1000px;
+      margin: 60px auto;
+    }
+
+    .project-card__media {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    }
+
+    .project-card__media img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.35s ease, filter 0.35s ease;
+      filter: brightness(0.95);
+    }
+
+    .project-card__media img:hover {
+      transform: scale(1.03);
+      filter: brightness(1);
+    }
+
+    .project-card__title {
+      font-size: 1.8rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-card__subtitle {
+      color: #bfcad0;
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .project-card__meta {
+      color: #b9c1c6;
+      font-size: 0.95rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .project-card__h {
+      color: #66fcf1;
+      font-size: 1.1rem;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-card__list {
+      color: #cbd6db;
+      margin: 0 0 1rem 1.25rem;
+      line-height: 1.6;
+    }
+
+    .project-card__tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .project-card__tags span {
+      background: rgba(255,255,255,0.08);
+      color: #e9f1f5;
+      padding: 0.35rem 0.7rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    .project-card__result {
+      color: #bfcad0;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-top: 0.5rem;
+    }
+
+    .project-card__actions {
+      display: flex;
+      gap: 0.8rem;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.6rem 1.1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      background: rgba(255,255,255,0.05);
+      color: #e6f0f4;
+      border: 1px solid rgba(255,255,255,0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    }
+
+    .btn--primary {
+      background: linear-gradient(90deg, #3ab0a3, #0a7fb1);
+      color: white;
+      border: none;
+    }
+
+    @media (min-width: 920px) {
+      .project-card {
+        grid-template-columns: 420px 1fr;
+        gap: 1.8rem;
+        padding: 2rem;
+      }
+      .project-card__media img {
+        height: 100%;
+        min-height: 320px;
+        max-height: 480px;
+      }
+    }
+
+    :root {
+      color-scheme: dark;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="project-card" id="project-grafana">
+    <div class="project-card__media">
+      <img src="assets/project_img/grafana.png" alt="Grafana & Prometheus Monitoring System">
+    </div>
+
+    <div class="project-card__content">
+      <h2 class="project-card__title">Grafana & Prometheus Monitoring System</h2>
+      <p class="project-card__subtitle">
+        Sistem monitoring berbasis Grafana dan Prometheus untuk memantau performa server, container, dan aplikasi Laravel secara real-time dengan visualisasi interaktif.
+      </p>
+
+      <!-- <div class="project-card__meta">
+        <strong>Peran:</strong> <span>DevOps Engineer & System Monitoring Developer</span><br>
+        <strong>Tahun:</strong> <span>2025</span>
+      </div> -->
+
+      <h3 class="project-card__h">Fitur Utama</h3>
+      <ul class="project-card__list">
+        <li>Integrasi Prometheus untuk pengumpulan metrik real-time</li>
+        <li>Dashboard Grafana dengan panel visual interaktif</li>
+        <li>Monitoring Docker container menggunakan cAdvisor</li>
+        <li>Integrasi MySQL Exporter, PHP-FPM Exporter, dan Node Exporter</li>
+        <li>Notifikasi otomatis via Telegram jika terjadi overload</li>
+        <li>Pemantauan performa aplikasi Laravel dan database</li>
+      </ul>
+
+      <h3 class="project-card__h">Teknologi yang Digunakan</h3>
+      <div class="project-card__tags">
+        <span>Grafana</span>
+        <span>Prometheus</span>
+        <span>Docker</span>
+        <span>cAdvisor</span>
+        <span>MySQL Exporter</span>
+        <span>PHP-FPM Exporter</span>
+        <span>Telegram Bot</span>
+      </div>
+
+      <p class="project-card__result">
+        <strong>Hasil:</strong> Sistem monitoring ini membantu mengidentifikasi bottleneck performa lebih cepat, memastikan ketersediaan server tetap stabil, dan mengurangi downtime hingga 40% melalui deteksi dini dan alert otomatis.
+      </p>
+
+      <div class="project-card__actions">
+        <!-- <a href="project-grafana-detail.html" class="btn btn--primary" title="Detail Project">Lihat Detail</a>
+        <a href="https://github.com/username/grafana-monitoring" class="btn" target="_blank" rel="noopener">Kode / Repo</a> -->
+        <a href="index.html#work" class="btn">&larr; Kembali</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
+>>>>>>> 9b71552 (first commit)
