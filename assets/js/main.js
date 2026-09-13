@@ -426,7 +426,7 @@ if (document.getElementById('visitor-count')) fetch(`https://api.countapi.xyz/hi
    =========================================== */
 function initTheme() {
   const savedTheme = localStorage.getItem('portfolio-theme');
-  const currentTheme = savedTheme || 'light';
+  const currentTheme = savedTheme || 'dark';
   applyTheme(currentTheme);
 }
 
@@ -505,7 +505,7 @@ const translations = {
     "skills.des_desc": "Wireframing, High-Fidelity Prototyping & Modern Glass UI.",
     "work.title_prefix": "Featured",
     "work.title_highlight": "Projects",
-    "work.subtitle": "Recent Works & Case Studies",
+    "work.subtitle": "Recent Works",
     "work.card1_badge": "Web Application",
     "work.card1_title": "Centralized Healthcare Data System",
     "work.card1_desc": "Secure, scalable centralized platform to manage medical records, patient queues, and clinical analytics in real-time.",
@@ -580,7 +580,7 @@ const translations = {
     "skills.des_desc": "Wireframing, Prototyping High-Fidelity & Desain Modern Glass UI.",
     "work.title_prefix": "Karya",
     "work.title_highlight": "Unggulan",
-    "work.subtitle": "Proyek Terbaru & Studi Kasus",
+    "work.subtitle": "Proyek Terbaru",
     "work.card1_badge": "Aplikasi Web",
     "work.card1_title": "Sistem Informasi Manajemen Data Terpusat",
     "work.card1_desc": "Sistem terpusat untuk memproses, menyimpan, dan menyajikan data rekam medis dan administrasi layanan kesehatan secara aman, terstruktur, dan real-time.",
