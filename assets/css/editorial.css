@@ -63,7 +63,7 @@ body { line-height: 1.65; }
 .hero-portrait-card::before { content: ''; position: absolute; inset: 12px -12px -12px 12px; background: var(--clr-primary); border-radius: 24px; z-index: -1; rotate: 3deg; }
 .hero-portrait-card::after { content: '✳'; position: absolute; top: -40px; left: -32px; z-index: 4; color: var(--coral); font-size: 95px; line-height: 1; animation: fresh-spin 24s linear infinite; pointer-events: none; }
 .portrait-frame { border-radius: 20px; padding: 0; background: var(--glass-bg); box-shadow: 0 18px 50px #2349a01a; border: 1px solid var(--glass-border); }
-.portrait-img { border-radius: 0; filter: saturate(1.15); object-position: center 30%; }
+.portrait-img { border-radius: 24px; filter: saturate(1.15); object-position: center 30%; }
 .hero-portrait-card:hover .portrait-frame { box-shadow: none; transform: none; }
 .portrait-badge { border-radius: 12px; padding: 12px 17px; box-shadow: 0 8px 25px #183e891a; background: var(--bg-color); animation: editorial-float 4s ease-in-out infinite; }
 .badge-top { top: 35px; right: -18px; left: auto; }
@@ -87,19 +87,19 @@ body { line-height: 1.65; }
 .section__subtitle { text-align: left; color: var(--text-gray); font-size: 10px; letter-spacing: 1.5px; margin-bottom: 30px; }
 .section > .section__title, .section > .section__subtitle { max-width: 1240px; padding-inline: 40px; margin-inline: auto; }
 .glass, .glass-panel { box-shadow: none; backdrop-filter: none; }
-.project__card { border-radius: 6px; display: grid; grid-template-columns: 1fr 1fr; overflow: hidden; padding: 0; gap: 0; }
-.project__media { height: 500px; min-width: 0; border-radius: 0; background: #070b16; }
+.project__card { border-radius: 24px; display: grid; grid-template-columns: 1fr 1fr; overflow: hidden; padding: 0; gap: 0; isolation: isolate; }
+.project__media { height: 500px; min-width: 0; border-radius: inherit; background: #070b16; overflow: hidden; }
 /* Equal media panels with the entire photo and video visible, including on hover. */
-.project__img, .project__video { display: block; width: 100%; height: 100%; max-height: none; object-fit: contain; object-position: center; border-radius: 0; }
+.project__img, .project__video { display: block; width: 100%; height: 100%; max-height: none; object-fit: cover; object-position: center; border-radius: inherit; }
 .project__media:hover .project__img, .project__media:hover .project__video { transform: none; }
 .project__info { grid-column: 1 / -1; padding: 28px 32px; }
 .project__title { font-size: 23px; color: var(--clr-text); }
 .project__description { font-size: 14px; line-height: 1.8; max-width: 880px; }
 .projects__grid { gap: 24px; }
-.project-item { border-radius: 16px; overflow: hidden; background: var(--bg-color); }
+.project-item { border-radius: 24px; overflow: hidden; background: var(--bg-color); isolation: isolate; }
 .project-item:hover { box-shadow: none; transform: translateY(-6px); border-color: var(--clr-primary); }
-.project-item__preview { padding: 0; }
-.project-item__img-box { border-radius: 0; height: 210px; }
+.project-item__preview { padding: 0; border-radius: 24px 24px 0 0; overflow: hidden; }
+.project-item__img-box { border-radius: inherit; height: 210px; overflow: hidden; }
 .project-item__badge { border-radius: 3px; background: var(--bg-color); color: var(--clr-text); border: 1px solid var(--glass-border); font-size: 10px; }
 .project-item__body { padding: 24px; }
 .project-item__title { font-size: 21px; font-weight: 500; letter-spacing: -.4px; line-height: 1.35; }
@@ -124,9 +124,8 @@ body { line-height: 1.65; }
 .bento-item { min-height: 235px; padding: 25px; align-items: flex-start; justify-content: flex-start; }
 .bento-item h3 { font-size: 21px; font-weight: 500; line-height: 1.25; }
 .bento-item p { font-size: 13px; }
-.book__title { font-size: 32px; letter-spacing: -1px; }
-.book__description { font-size: 14px; }
-.book__img { box-shadow: 10px 12px 24px #0002; }
+.book__cover-wrapper { border-radius: 20px; overflow: hidden; }
+.book__img { border-radius: 20px; box-shadow: 10px 12px 24px #0002; object-fit: cover; }
 .contact { margin-top: 70px; background: var(--glass-bg); border-top: 1px solid var(--glass-border); }
 .contact__container { max-width: 1240px; }
 .contact__form { padding: 0 0 60px; border: 0; max-width: 720px; }
